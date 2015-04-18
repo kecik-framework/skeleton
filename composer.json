@@ -13,5 +13,11 @@
 		"kecik/dic": "1.0.*dev",
 		"kecik/mvc": "1.0.*dev",
 		"symfony/debug": "3.0.*@dev"
-	}
+	},
+	"extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev"
 }
