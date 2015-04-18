@@ -13,14 +13,5 @@
 		"kecik/dic": "1.0.*dev",
 		"kecik/mvc": "1.0.*dev",
 		"symfony/debug": "3.0.*@dev"
-	},
-	"script": {
-		"post-create-project-cmd": [
-			"php -r \"copy('.env.example', '.env');\"",
-			"php artisan key:generate"
-		]
-	},
-	"config": {
-		"preferred-install": "dist"
 	}
 }
