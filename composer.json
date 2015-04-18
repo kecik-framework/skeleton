@@ -1,0 +1,26 @@
+{
+	"name": "kecik/project",
+	"description": "The Kecik Framework Project",
+	"keywords": ["framework", "kecik"],
+	"license": "MIT",
+	"type": "project",
+	"require": {
+		"kecik/kecik": "1.0.*@dev",
+		"kecik/session": "1.0.*@dev",
+		"kecik/cookie": "1.0.*@dev",
+		"kecik/database": "1.0.*@dev",
+		"kecik/language": "1.0.*dev",
+		"kecik/dic": "1.0.*dev",
+		"kecik/mvc": "1.0.*dev",
+		"symfony/debug": "3.0.*@dev"
+	},
+	"script": {
+		"post-create-project-cmd": [
+			"php -r \"copy('.env.example', '.env');\"",
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	}
+}
