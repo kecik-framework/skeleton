@@ -1,4 +1,6 @@
 <?php
+require "third_party.php";
+
 return [
 	'DIC' => ['enable' => TRUE],
 	'Cookie' => [
