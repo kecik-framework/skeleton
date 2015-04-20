@@ -143,3 +143,17 @@ $app->get('single-post', function() {
 $app->get('contact', function() {
 	return $this->container['margoController']->contact();
 })->template('margo/margo');
+
+//** Route Like Codeigniter index.php/Controller/Method/Param1/Params2/Param3.../ParamsN
+$app->get(':controller/:method/:params+', function($controller, $method, $params=[]) {
+	$controller = 'Controller\\'.ucfirst($controller);
+	$c = new $controller($this);
+	return call_user_func_array([$c, $method], $params);
+})->template('margo/margo');
+
+$app->post(':controller/:method/:params+', function($controller, $method, $params=[]) {
+	$controller = 'Controller\\'.ucfirst($controller);
+	$c = new $controller($this);
+	return call_user_func_array([$c, $method], $params);
+});
+//-- END Route Like CodeIgniter

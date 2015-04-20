@@ -230,3 +230,17 @@ $app->get('example-500', function() {
 $app->get('example-blank', function() {
 	return $this->container['adminlteController']->blank();
 })->template('adminlte/adminlte');
+
+//** Route Like Codeigniter index.php/Controller/Method/Param1/Params2/Param3.../ParamsN
+$app->get(':controller/:method/:params+', function($controller, $method, $params=[]) {
+	$controller = 'Controller\\'.ucfirst($controller);
+	$c = new $controller($this);
+	return call_user_func_array([$c, $method], $params);
+})->template('adminlte/adminlte');
+
+$app->post(':controller/:method/:params+', function($controller, $method, $params=[]) {
+	$controller = 'Controller\\'.ucfirst($controller);
+	$c = new $controller($this);
+	return call_user_func_array([$c, $method], $params);
+});
+//-- END Route Like CodeIgniter

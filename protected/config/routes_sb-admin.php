@@ -61,3 +61,17 @@ $app->get('blank', function() {
 
 //** Login
 $app->get('login', function() {})->template('sb-admin/login');
+
+//** Route Like Codeigniter index.php/Controller/Method/Param1/Params2/Param3.../ParamsN
+$app->get(':controller/:method/:params+', function($controller, $method, $params=[]) {
+	$controller = 'Controller\\'.ucfirst($controller);
+	$c = new $controller($this);
+	return call_user_func_array([$c, $method], $params);
+})->template('sb-admin/sb-admin');
+
+$app->post(':controller/:method/:params+', function($controller, $method, $params=[]) {
+	$controller = 'Controller\\'.ucfirst($controller);
+	$c = new $controller($this);
+	return call_user_func_array([$c, $method], $params);
+});
+//-- END Route Like CodeIgniter
