@@ -7,7 +7,6 @@ require($dir_config."debug.php");
 
 $config = require($dir_config."config.php");
 $app = new Kecik\Kecik($config);
-	require($dir_config."assets.php");
 
 	$lib_database = $app->config->get('libraries');
 	if ($lib_database['Database']['enable'])
