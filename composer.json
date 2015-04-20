@@ -1,6 +1,6 @@
 {
 	"name": "kecik/skeleton",
-	"description": "The Kecik Framework Skeleton Project",
+	"description": "A Kecik Framework skeleton application for rapid development",
 	"keywords": ["framework", "kecik"],
 	"license": "MIT",
 	"type": "project",
