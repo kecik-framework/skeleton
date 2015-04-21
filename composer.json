@@ -12,7 +12,7 @@
 		"kecik/language": "1.0.*@dev",
 		"kecik/dic": "1.0.*@dev",
 		"kecik/mvc": "1.0.*@dev",
-		"kcik/auth": "1.0.*@dev",
+		"kecik/auth": "1.0.*@dev",
 		"symfony/debug": "3.0.*@dev"
 	},
 	"extra": {
