@@ -6,7 +6,7 @@ $dir_config = dirname(__DIR__.'../').'/protected/config/';
 require($dir_config."debug.php");
 
 $config = require($dir_config."config.php");
-$config['path.basepath'] = __DIR__.'/';
+//$config['path.basepath'] = __DIR__.'/';
 
 $app = new Kecik\Kecik($config);
 
