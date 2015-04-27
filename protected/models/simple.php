@@ -1,5 +1,5 @@
 <?php
-namepace Model;
+namespace Model;
 
 use Kecik\Model;
 
