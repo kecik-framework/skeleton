@@ -400,7 +400,7 @@
     <!--<script src="../dist/js/sb-admin-2.js"></script>-->
     @js
 
-    <?php if ($this->input->get('p') == 'tables'): ?>
+    <?php if ($this->request->get('p') == 'tables'): ?>
     <script>
     $(document).ready(function() {
         $('#dataTables-example').DataTable();
@@ -408,7 +408,7 @@
     </script>
     <?php endif ?>
 
-    <?php if ($this->input->get('p') == 'notifications'): ?>
+    <?php if ($this->request->get('p') == 'notifications'): ?>
     <script>
     // tooltip demo
     $('.tooltip-demo').tooltip({

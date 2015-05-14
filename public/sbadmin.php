@@ -3,6 +3,7 @@ require "../vendor/autoload.php";
 
 $dir_config = dirname(__DIR__.'../').'/protected/config/';
 
+//** Disable this if you run on php version 5.4 is can run on php 5.5
 require($dir_config."debug.php");
 
 $config = require($dir_config."config.php");

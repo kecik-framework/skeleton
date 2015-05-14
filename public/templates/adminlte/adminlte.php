@@ -18,7 +18,7 @@
          folder instead of downloading all of them to reduce the load. -->
     <!--<link href="dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />-->
     <!-- iCheck -->
-    <?php if ($this->input->get('p') == '' ): ?>
+    <?php if ($this->request->get('p') == '' ): ?>
     <link href="<?php echo $this->url->baseUrl() ?>assets/adminlte/js/iCheck/flat/blue.css" rel="stylesheet" type="text/css" />
     <?php endif ?>
     <!-- Morris chart -->
@@ -118,7 +118,7 @@
     </style>
 
   </head>
-  <body class="skin-blue <?php echo ( !empty($this->input->get('layout')) )? str_replace('_', ' ', $this->input->get('layout')):'' ?>">
+  <body class="skin-blue <?php echo ( !empty($this->request->get('layout')) )? str_replace('_', ' ', $this->request->get('layout')):'' ?>">
     <div class="wrapper">
       
       <header class="main-header">
@@ -573,17 +573,17 @@
 
     <!-- AdminLTE for demo purposes -->
     <!--<script src="dist/js/demo.js" type="text/javascript"></script>-->
-    <?php /*if ($this->input->get('p') == '' || $this->input->get('p') == 'morris'): ?>
+    <?php /*if ($this->request->get('p') == '' || $this->request->get('p') == 'morris'): ?>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <?php endif*/ ?>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-    <?php if ($this->input->get('p') == ''): ?>
+    <?php if ($this->request->get('p') == ''): ?>
     <script>
       $.widget.bridge('uibutton', $.ui.button);
     </script>
     <?php endif ?>
 
-    <?php if ($this->input->get('p') == 'morris'): ?>
+    <?php if ($this->request->get('p') == 'morris'): ?>
     <script type="text/javascript">
       $(function () {
         "use strict";
@@ -669,7 +669,7 @@
     </script>
     <?php endif ?>
 
-    <?php if ($this->input->get('p') == 'flot'): ?>
+    <?php if ($this->request->get('p') == 'flot'): ?>
     <script type="text/javascript">
 
       $(function () {
@@ -938,7 +938,7 @@
     </script>
     <?php endif ?>
 
-    <?php if ($this->input->get('p') == 'charts'): ?>
+    <?php if ($this->request->get('p') == 'charts'): ?>
       <!-- page script -->
     <script type="text/javascript">
       $(function () {
@@ -1148,7 +1148,7 @@
     </script>
     <?php endif?>
 
-    <?php if ($this->input->get('p') == 'sliders'): ?>
+    <?php if ($this->request->get('p') == 'sliders'): ?>
 
     <script type="text/javascript">
       $(function () {
@@ -1218,7 +1218,7 @@
     </script>
     <?php endif ?>
 
-    <?php if ($this->input->get('p') == 'forms-advanced'): ?>
+    <?php if ($this->request->get('p') == 'forms-advanced'): ?>
       <!-- Page script -->
     <script type="text/javascript">
       $(function () {
@@ -1281,7 +1281,7 @@
     </script>
     <?php endif ?>
 
-    <?php if ($this->input->get('p') == 'forms-editors'): ?>
+    <?php if ($this->request->get('p') == 'forms-editors'): ?>
       <script type="text/javascript">
       $(function () {
         // Replace the <textarea id="editor1"> with a CKEditor
@@ -1293,7 +1293,7 @@
     </script>
     <?php endif ?>
 
-    <?php if ($this->input->get('p') == 'tables-data'): ?>
+    <?php if ($this->request->get('p') == 'tables-data'): ?>
       <!-- page script -->
     <script type="text/javascript">
       $(function () {
@@ -1310,7 +1310,7 @@
     </script>
     <?php endif ?>
 
-    <?php if ($this->input->get('p') == 'calendar'): ?>
+    <?php if ($this->request->get('p') == 'calendar'): ?>
       <!-- Page specific script -->
     <script type="text/javascript">
       $(function () {
@@ -1470,7 +1470,7 @@
     </script>
     <?php endif ?>
 
-    <?php if ($this->input->get('p') == 'mailbox'): ?>
+    <?php if ($this->request->get('p') == 'mailbox'): ?>
       <script>
       $(function () {
         //Enable iCheck plugin for checkboxes
@@ -1516,7 +1516,7 @@
     </script>
     <?php endif ?>
 
-    <?php if ($this->input->get('p') == 'mailbox-compose'): ?>
+    <?php if ($this->request->get('p') == 'mailbox-compose'): ?>
       <script>
       $(function () {
         //Add text editor
