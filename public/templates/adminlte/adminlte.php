@@ -524,7 +524,7 @@
         <!-- /.sidebar -->
       </aside>
 
-      @controller
+      @response
 
       <footer class="main-footer">
         <div class="pull-right hidden-xs">

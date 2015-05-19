@@ -95,7 +95,7 @@
 		
     </header><!--/header-->
 
-    @controller
+    @response
 
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
