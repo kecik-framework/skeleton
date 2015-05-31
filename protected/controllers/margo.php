@@ -7,7 +7,7 @@ class Margo extends Controller {
 	var $app;
 
 	public function __construct($app) {
-		parent::__construct();
+		parent::__construct($app);
 
 		$app->config->set('path.assets', 'assets/margo');
 		//** CSS
