@@ -3,6 +3,9 @@ $app->assets->css->add('bootstrap.min');
 $app->assets->css->add('bootstrap-theme.min');
 $app->assets->css->add('starter-template');
 
+$app->assets->js->add('jquery.min');
+$app->assets->js->add('bootstrap.min');
+
 $app->get('/', function() {
 	return $this->container['welcomeController']->index();
 	//** Direct without Container
