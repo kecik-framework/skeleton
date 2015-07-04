@@ -16,6 +16,11 @@ $app = new Kecik\Kecik($config);
 		$app->db->connect();
 
 	require($dir_config."container.php");
+
+    /**
+     * Remove Comments (//) For enable Authentic Module
+     */
+    //Kecik\Auth::init($app);
 	require($dir_config."routes_margo.php");
 
 $app->run();
