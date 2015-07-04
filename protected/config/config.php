@@ -14,6 +14,7 @@ return [
 	'auth.field_level'		=> 'level', //** name Level field in table Database
 	'auth.login_url'		=> 'login', //** login route
 	'auth.logout_url'		=> 'logout', //** logout route
+	'auth.login_template'  	=> 'sb-admin/login', //** login template
 
 	'libraries' => require('autoload.php')
 ];
