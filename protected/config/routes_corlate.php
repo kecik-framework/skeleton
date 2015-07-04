@@ -54,6 +54,12 @@ $app->post('sendmail', function() {
 });
 
 //** Route Like Codeigniter index.php/Controller/Method/Param1/Params2/Param3.../ParamsN
+$app->get(':controller', function($controller) {
+	$controller = 'Controller\\'.ucfirst($controller);
+	$c = new $controller($this);
+	return $c->index();
+})->template('basic/basic');
+
 $app->get(':controller/:method/:params+', function($controller, $method, $params=[]) {
 	$controller = 'Controller\\'.ucfirst($controller);
 	$c = new $controller($this);
