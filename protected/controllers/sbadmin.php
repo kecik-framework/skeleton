@@ -7,7 +7,7 @@ class Sbadmin extends Controller {
 	var $app;
 
 	public function __construct($app) {
-		parent::__construct($app);
+		parent::__construct();
 
 		$app->config->set('path.assets', 'assets/sb-admin');
 		//** CSS
