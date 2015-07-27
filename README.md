@@ -114,8 +114,8 @@ Contoh:
 ##**MVC/HMVC**
 Struktur `MVC/HMVC` terletak di direktori protected, terdapat contoh sederhana seperti `Controller` pada MVC, `Model` pada MVC, dan `View` pada MVC, terdapat juga contoh sederhana untuk HMVC, sehingga dapat mempermudah anda dalam menggunakan MVC pada Kecik Framework.
 
-Daftar Github Library/Pustaka dari Kecik Framework
 
+##**Daftar Github Library/Pustaka dari Kecik Framework**
  1.  **Kecik Cookie** [https://github.com/kecik-framework/cookie](https://github.com/kecik-framework/session/blob/master/README-ID.md)
  2. **Kecik Database** [https://github.com/kecik-framework/database](https://github.com/kecik-framework/database)
  3. **Kecik DIC** [https://github.com/kecik-framework/dic](https://github.com/kecik-framework/dic/blob/master/README-ID.md)
