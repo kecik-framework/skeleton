@@ -60,6 +60,6 @@ class Simple extends Model {
             'update' => function($data) {
 
             }
-        ),
+        );
     }
 }
