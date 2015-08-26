@@ -20,7 +20,7 @@ $app = new Kecik\Kecik($config);
     /**
      * Remove Comments (//) For enable Authentic Module
      */
-    //Kecik\Auth::init($app);
+    //Kecik\Auth::init();
 	require($dir_config."routes_margo.php");
 
 $app->run();
