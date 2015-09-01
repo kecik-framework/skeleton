@@ -68,7 +68,7 @@ Merupakan sebuah kerangka kerja yang didesain seperti framework besar pada umumn
 ###**Installasi**
 Untuk installasi cukup menggunakan perintah dibawah ini
 ```shell
-composer --stability=dev kecik\skeleton create-project nama_project
+composer create-project --stability=dev kecik\skeleton nama_project
 ```
 
 Setelah berhasil melakukan installasi, untuk melihat hasilnya anda cukup mengakses url seperti berikut ini di browser kesayangan anda.
