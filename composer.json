@@ -13,7 +13,8 @@
 		"kecik/dic": "1.0.*@dev",
 		"kecik/mvc": "1.0.*@dev",
 		"kecik/auth": "1.0.*@dev",
-		"symfony/debug": "3.0.*@dev"
+		"symfony/debug": "3.0.*@dev",
+        "filp/whoops": "1.*"
 	},
 	"extra": {
         "branch-alias": {
