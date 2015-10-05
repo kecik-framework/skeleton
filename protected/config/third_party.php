@@ -11,6 +11,9 @@ function ThirdPartyAutoload($class) {
 			else
 				$file_load = \Kecik\Config::get('path.third_party').'/'.$class_array[0].'/'.$class_array[0].'.php';
 
+			if (php_sapi_name() == 'cli')
+					$file_load = \Kecik\Config::get('path.basepath').'/'.$file_load;
+				
 			if (file_exists($file_load)) {
 				include_once $file_load;
 			} else {
