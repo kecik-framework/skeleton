@@ -24,7 +24,7 @@
 	</ul>
 	Template and Language in directory:
 	<ul>
-		<li>Template => <strong>public/templates</strong></li>
+		<li>Template => <strong>protected/templates</strong></li>
 		<li>Languages => <strong>public/languages</strong></li>
 	</ul>
 	Third Party and Composer in directory:
