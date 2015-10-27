@@ -26,6 +26,12 @@ Merupakan sebuah kerangka kerja yang didesain seperti framework besar pada umumn
 |           +-- controllers
 |           +-- models
 |           +-- views
+|   +-- templates
+|       +-- adminlte
+|       +-- basic
+|       +-- corlate
+|       +-- margo
+|       +-- sb-admin
 |   +-- third_party
 |   +-- views
 +-- public
@@ -57,12 +63,6 @@ Merupakan sebuah kerangka kerja yang didesain seperti framework besar pada umumn
 |           +-- images
 |           +-- js
 |   +-- languages
-|   +-- templates
-|       +-- adminlte
-|       +-- basic
-|       +-- corlate
-|       +-- margo
-|       +-- sb-admin
 ```
 
 ###**Installasi**
