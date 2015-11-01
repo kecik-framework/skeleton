@@ -21,7 +21,7 @@ ErrorHandler::register();
  */
 /*
 use Whoops\Handler\PrettyPageHandler;
-use Whoops\Handler\JsonResponseHandler;
+// use Whoops\Handler\JsonResponseHandler;
 
 $run     = new Whoops\Run;
 $handler = new PrettyPageHandler;
@@ -43,7 +43,7 @@ $run->pushHandler($handler);
 // first in the stack, it will be executed before the error
 // page handler, and will have a chance to decide if anything
 // needs to be done.
-$run->pushHandler(new JsonResponseHandler);
+// $run->pushHandler(new JsonResponseHandler);
 
 // Register the handler with PHP, and you're set!
 $run->register();
