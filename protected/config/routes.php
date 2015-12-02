@@ -15,10 +15,16 @@ $app->get('/', function() {
 })->template('basic/basic');
 
 //** Route Like Codeigniter index.php/Controller/Method/Param1/Params2/Param3.../ParamsN
-$app->get(':controller', function($controller) {
+/*$app->get(':controller', function($controller) {
 	$controller = 'Controller\\'.ucfirst($controller);
 	$c = new $controller($this);
 	return $c->index();
+})->template('basic/basic');
+
+$app->get(':controller/:method', function($controller, $method) {
+	$controller = 'Controller\\'.ucfirst($controller);
+	$c = new $controller($this);
+	return call_user_func_array([$c, $method], []);
 })->template('basic/basic');
 
 $app->get(':controller/:method/:params+', function($controller, $method, $params=[]) {
@@ -31,5 +37,5 @@ $app->post(':controller/:method/:params+', function($controller, $method, $param
 	$controller = 'Controller\\'.ucfirst($controller);
 	$c = new $controller($this);
 	return call_user_func_array([$c, $method], $params);
-});
+});*/
 //-- END Route Like CodeIgniter
