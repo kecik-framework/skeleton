@@ -1,5 +1,5 @@
 <?php
-use Symfony\Component\Debug\Debug;
+/*use Symfony\Component\Debug\Debug;
 use Symfony\Component\Debug\DebugClassLoader;
 use Symfony\Component\Debug\ErrorHandler;
 use Symfony\Component\Debug\ExceptionHandler;
@@ -13,13 +13,13 @@ if ('cli' !== php_sapi_name()) {
 } elseif (!ini_get('log_errors') || ini_get('error_log')) {
     ini_set('display_errors', 1);
 }
-ErrorHandler::register();
+ErrorHandler::register();*/
 
 /**
  * Whoops Debugger
  * Uncomment this if you want use whoops debuger
  */
-/*
+
 use Whoops\Handler\PrettyPageHandler;
 // use Whoops\Handler\JsonResponseHandler;
 
@@ -47,4 +47,3 @@ $run->pushHandler($handler);
 
 // Register the handler with PHP, and you're set!
 $run->register();
-*/
