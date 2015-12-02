@@ -1,3 +1,4 @@
 *.php-tmp
 vendor/
 vendor/*
+*.lock
