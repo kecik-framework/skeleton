@@ -1,1 +1,3 @@
 *.php-tmp
+vendor/
+vendor/*
