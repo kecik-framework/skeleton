@@ -31,42 +31,62 @@ class Corlate extends Controller {
 	}
 
 	public function index() {
+		$this->config->set('title', 'Home');
+
 		return $this->view('corlate/index');
 	}
 
 	public function about() {
+		$this->config->set('title', 'About');
+
 		return $this->view('corlate/about');
 	}
 
 	public function services() {
+		$this->config->set('title', 'Services');
+
 		return $this->view('corlate/services');
 	}
 
 	public function portfolio() {
+		$this->config->set('title', 'Portfolio');
+
 		return $this->view('corlate/portfolio');
 	}
 
 	public function blog_item() {
+		$this->config->set('title', 'Blog Single');
+
 		return $this->view('corlate/blog-item');
 	}
 
 	public function pricing() {
+		$this->config->set('title', 'Pricing');
+
 		return $this->view('corlate/pricing');
 	}
 
 	public function error404() {
+		$this->config->set('title', '404');
+
 		return $this->view('corlate/404');
 	}
 
 	public function shortcodes() {
+		$this->config->set('title', 'Shortcodes');
+
 		return $this->view('corlate/shortcodes');
 	}
 
 	public function blog() {
+		$this->config->set('title', 'Blog');
+
 		return $this->view('corlate/blog');
 	}
 
 	public function contact() {
+		$this->config->set('title', 'Contact');
+
 		return $this->view('corlate/contact');
 	}
 

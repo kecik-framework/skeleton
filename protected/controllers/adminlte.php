@@ -36,6 +36,8 @@ class Adminlte extends Controller {
 	}
 
 	public function index() {
+		$this->config->set('title', 'Home');
+
 		$this->app->assets->css->add('iCheck/all');
 		//$this->app->assets->css->add('blue');
 		$this->app->assets->css->add('morris');
@@ -62,6 +64,8 @@ class Adminlte extends Controller {
 	}
 	
 	public function index2() {
+		$this->config->set('title', 'Home 2');
+
 		$this->app->assets->css->add('iCheck/all');
 		//$this->app->assets->css->add('blue');
 		$this->app->assets->css->add('morris');
@@ -85,10 +89,14 @@ class Adminlte extends Controller {
 	}
 
 	public function widgets() {
+		$this->config->set('title', 'Widgets');
+
 		return $this->view('adminlte/widgets');
 	}
 
 	public function morris() {
+		$this->config->set('title', 'Morris');
+
 		$this->app->assets->js->add('raphael');
 		$this->app->assets->js->add('morris.min');
 
@@ -96,6 +104,8 @@ class Adminlte extends Controller {
 	}
 
 	public function flot() {
+		$this->config->set('title', 'Flot');
+
 		$this->app->assets->js->add('flot/jquery.flot.min');
 		$this->app->assets->js->add('flot/jquery.flot.resize.min');
 		$this->app->assets->js->add('flot/jquery.flot.pie.min');
@@ -105,6 +115,8 @@ class Adminlte extends Controller {
 	}
 
 	public function charts_inline() {
+		$this->config->set('title', 'Charts Inline');
+
 		$this->app->assets->js->add('jquery.knob');
 		$this->app->assets->js->add('jquery.sparkline.min');
 
@@ -112,18 +124,26 @@ class Adminlte extends Controller {
 	}
 
 	public function ui_general() {
+		$this->config->set('title', 'UI General');
+
 		return $this->view('adminlte/ui-general');
 	}
 
 	public function ui_icons() {
+		$this->config->set('title', 'UI Icons');
+
 		return $this->view('adminlte/ui-icons');
 	}
 
 	public function ui_buttons() {
+		$this->config->set('title', 'UI Buttons');
+
 		return $this->view('adminlte/ui-buttons');
 	}
 
 	public function ui_sliders() {
+		$this->config->set('title', 'UI Sliders');
+
 		$this->app->assets->css->add('ion.rangeSlider', ['type'=>'text/css']);
 		$this->app->assets->css->add('ion.rangeSlider.skinNice', ['type'=>'text/css']);
 		$this->app->assets->css->add('slider', ['type'=>'text/css']);
@@ -139,18 +159,26 @@ class Adminlte extends Controller {
 	}
 
 	public function ui_timeline() {
+		$this->config->set('title', 'UI Timeline');
+
 		return $this->view('adminlte/ui-timeline');
 	}
 
 	public function ui_modals() {
+		$this->config->set('title', 'UI Modals');
+
 		return $this->view('adminlte/ui-modals');
 	}
 
 	public function forms_general() {
+		$this->config->set('title', 'Form General');
+
 		return $this->view('adminlte/forms-general');
 	}
 
 	public function forms_advanced() {
+		$this->config->set('title', 'Forms Advanced');
+
 		$this->app->assets->css->add('iCheck/all');
 		$this->app->assets->css->add('datepicker3');
 		$this->app->assets->css->add('daterangepicker-bs3');
@@ -170,6 +198,8 @@ class Adminlte extends Controller {
 	}
 
 	public function forms_editors() {
+		$this->config->set('title', 'Forms Editors');
+
 		$this->app->assets->css->add('bootstrap3-wysihtml5.min');
 
 		$this->app->assets->js->add('ckeditor/ckeditor');
@@ -179,10 +209,14 @@ class Adminlte extends Controller {
 	}
 
 	public function tables_simple() {
+		$this->config->set('title', 'Tables Simple');
+
 		return $this->view('adminlte/tables-simple');
 	}
 
 	public function tables_data() {
+		$this->config->set('title', 'Tables Data');
+
 		$this->app->assets->css->add('dataTables.bootstrap');
 
 		$this->app->assets->js->add('jquery.dataTables');
@@ -192,6 +226,8 @@ class Adminlte extends Controller {
 	}
 
 	public function calendar() {
+		$this->config->set('title', 'Calendar');
+
 		$this->app->assets->css->add('fullcalendar.min');
 		$this->app->assets->css->add('fullcalendar.print', ['media'=>'print']);
 
@@ -202,6 +238,8 @@ class Adminlte extends Controller {
 	}
 
 	public function mailbox() {
+		$this->config->set('title', 'Mailbox');
+
 		$this->app->assets->css->add('fullcalendar.min');
 		$this->app->assets->css->add('fullcalendar.print', ['media'=>'print']);
 
@@ -214,6 +252,8 @@ class Adminlte extends Controller {
 	}
 
 	public function mailbox_compose() {
+		$this->config->set('title', 'Mailbox compose');
+
 		$this->app->assets->css->add('iCheck/all');
 		$this->app->assets->css->add('bootstrap3-wysihtml5.min');
 
@@ -224,22 +264,32 @@ class Adminlte extends Controller {
 	}
 
 	public function mailbox_read_mail() {
+		$this->config->set('title', 'Mailbox Read Mail');
+
 		return $this->view('adminlte/mailbox-read-mail');
 	}
 
 	public function example_invoices() {
+		$this->config->set('title', 'Example Invoices');
+
 		return $this->view('adminlte/example-invoices');
 	}
 
 	public function error404() {
+		$this->config->set('title', '404');
+
 		return $this->view('adminlte/404');
 	}
 
 	public function error500() {
+		$this->config->set('title', '500');
+
 		return $this->view('adminlte/500');
 	}
 
 	public function blank() {
+		$this->config->set('title', 'Blank');
+		
 		return $this->view('adminlte/blank');
 	}
 }

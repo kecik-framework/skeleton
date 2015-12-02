@@ -29,6 +29,8 @@ class Sbadmin extends Controller {
 	}
 
 	public function index() {
+		$this->config->set('title', 'Home');
+
 		$this->app->assets->js->add('raphael-min');
 		$this->app->assets->js->add('morris.min');
 		$this->app->assets->js->add('morris-data');
@@ -37,6 +39,8 @@ class Sbadmin extends Controller {
 	}
 	
 	public function flot() {
+		$this->config->set('title', 'Flot');
+
 		$this->app->assets->js->add('excanvas.min');
 		$this->app->assets->js->add('jquery.flot');
 		$this->app->assets->js->add('jquery.flot.pie');
@@ -49,6 +53,8 @@ class Sbadmin extends Controller {
 	}
 
 	public function morris() {
+		$this->config->set('title', 'Moris');
+
 		$this->app->assets->js->add('raphael-min');
 		$this->app->assets->js->add('morris.min');
 		$this->app->assets->js->add('morris-data');
@@ -57,6 +63,8 @@ class Sbadmin extends Controller {
 	}
 
 	public function tables() {
+		$this->config->set('title', 'Table');
+
 		$this->app->assets->css->add('dataTables.bootstrap');
 		$this->app->assets->css->add('dataTables.responsive');
 
@@ -67,34 +75,50 @@ class Sbadmin extends Controller {
 	}
 
 	public function forms() {
+		$this->config->set('title', 'Forms');
+
 		return $this->view('sbadmin/forms');
 	}
 
 	public function panels_wells() {
+		$this->config->set('title', 'Panels Wells');
+
 		return $this->view('sbadmin/panels-wells');
 	}
 
 	public function buttons() {
+		$this->config->set('title', 'Buttons');
+
 		return $this->view('sbadmin/buttons');
 	}
 
 	public function notifications() {
+		$this->config->set('title', 'Notifications');
+
 		return $this->view('sbadmin/notifications');
 	}
 
 	public function typography() {
+		$this->config->set('title', 'Typography');
+
 		return $this->view('sbadmin/typography');
 	}
 
 	public function icons() {
+		$this->config->set('title', 'Icons');
+
 		return $this->view('sbadmin/icons');
 	}
 
 	public function grid() {
+		$this->config->set('title', 'Grid');
+
 		return $this->view('sbadmin/grid');
 	}
 
 	public function blank() {
+		$this->config->set('title', 'Blank');
+
 		return $this->view('sbadmin/blank');
 	}
 }
