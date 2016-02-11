@@ -10,30 +10,30 @@ Merupakan sebuah kerangka kerja yang didesain seperti framework besar pada umumn
 ###**Struktur Direktori Kecik Skeleton**
 ```
 +-- protected
-|   +-- config
-|   +-- controllers
-|   +-- models
-|   +-- module
-|        +-- controllers
-|        +-- models
-|        +-- views
-|   +-- team
-|       +-- module1
-|           +-- controllers
-|           +-- models
-|           +-- views
-|       +-- module2
-|           +-- controllers
-|           +-- models
-|           +-- views
-|   +-- templates
+|   +-- Config
+|   +-- Controllers
+|   +-- Models
+|   +-- Module
+|        +-- Controllers
+|        +-- Models
+|        +-- Views
+|   +-- Team
+|       +-- Module1
+|           +-- Controllers
+|           +-- Models
+|           +-- Views
+|       +-- Module2
+|           +-- Controllers
+|           +-- Models
+|           +-- Views
+|   +-- Templates
 |       +-- adminlte
 |       +-- basic
 |       +-- corlate
 |       +-- margo
 |       +-- sb-admin
-|   +-- third_party
-|   +-- views
+|   +-- Third_party
+|   +-- Views
 +-- public
 |   +-- assets
 |       +-- adminlte
@@ -68,7 +68,7 @@ Merupakan sebuah kerangka kerja yang didesain seperti framework besar pada umumn
 ###**Installasi**
 Untuk installasi cukup menggunakan perintah dibawah ini
 ```shell
-composer create-project --stability=dev kecik/skeleton nama_project
+composer --stability=dev kecik\skeleton create-project nama_project
 ```
 
 Setelah berhasil melakukan installasi, untuk melihat hasilnya anda cukup mengakses url seperti berikut ini di browser kesayangan anda.
@@ -104,7 +104,7 @@ Merupakan setting untuk meload secara otomatis sebuah library/pustaka yang dised
 Contoh:
 ```
 +-- protected
-|   +-- third_party
+|   +-- Third_party
 |       +-- PHPWord
 |           +-- Examples     ---+
 |           +-- PHPWord         |-- Struktur dari PHPWord
