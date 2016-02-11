@@ -1,89 +1,106 @@
 <?php
-//** Home
-$app->get('/', function() {
-	return $this->container['sbadminController']->index();
-})->template('sb-admin/sb-admin');
+$RoutesDir = __DIR__ . '..';
+$RouteFiles = scandir($RoutesDir);
 
-//** Flot
-$app->get('flot', function() {
-	return $this->container['sbadminController']->flot();
-})->template('sb-admin/sb-admin');
+if (count($RouteFiles) > 2) {
 
-//** Morris
-$app->get('morris', function() {
-	return $this->container['sbadminController']->morris();
-})->template('sb-admin/sb-admin');
+    foreach ($RouteFiles as $RouteFile) {
 
-//** Tables
-$app->get('tables', function() {
-	return $this->container['sbadminController']->tables();
-})->template('sb-admin/sb-admin');
+        if ($RouteFile == '.' || $RouteFile == '..') {
+            continue;
+        }
 
-//** Forms
-$app->get('forms', function() {
-	return $this->container['sbadminController']->forms();
-})->template('sb-admin/sb-admin');
+        include_once $RoutesDir . $RouteFile;
+    }
 
-//** Panels and Wells
-$app->get('panels-wells', function() {
-	return $this->container['sbadminController']->panels_wells();
-})->template('sb-admin/sb-admin');
+} else {
+    //** Home
+    $app->get('/', function () {
+        return $this->container['sbadminController']->index();
+    })->template('sb-admin/sb-admin');
 
-//** Buttons
-$app->get('buttons', function() {
-	return $this->container['sbadminController']->buttons();
-})->template('sb-admin/sb-admin');
+    //** Flot
+    $app->get('flot', function () {
+        return $this->container['sbadminController']->flot();
+    })->template('sb-admin/sb-admin');
 
-//** Notifications
-$app->get('notifications', function() {
-	return $this->container['sbadminController']->notifications();
-})->template('sb-admin/sb-admin');
+    //** Morris
+    $app->get('morris', function () {
+        return $this->container['sbadminController']->morris();
+    })->template('sb-admin/sb-admin');
 
-//** Typography
-$app->get('typography', function() {
-	return $this->container['sbadminController']->typography();
-})->template('sb-admin/sb-admin');
+    //** Tables
+    $app->get('tables', function () {
+        return $this->container['sbadminController']->tables();
+    })->template('sb-admin/sb-admin');
 
-//** Icons
-$app->get('icons', function() {
-	return $this->container['sbadminController']->icons();
-})->template('sb-admin/sb-admin');
+    //** Forms
+    $app->get('forms', function () {
+        return $this->container['sbadminController']->forms();
+    })->template('sb-admin/sb-admin');
 
-//** Icons
-$app->get('grid', function() {
-	return $this->container['sbadminController']->grid();
-})->template('sb-admin/sb-admin');
+    //** Panels and Wells
+    $app->get('panels-wells', function () {
+        return $this->container['sbadminController']->panels_wells();
+    })->template('sb-admin/sb-admin');
 
-//** Blank
-$app->get('blank', function() {
-	return $this->container['sbadminController']->blank();
-})->template('sb-admin/sb-admin');
+    //** Buttons
+    $app->get('buttons', function () {
+        return $this->container['sbadminController']->buttons();
+    })->template('sb-admin/sb-admin');
 
-//** Login
-$app->get('login', function() {})->template('sb-admin/login');
+    //** Notifications
+    $app->get('notifications', function () {
+        return $this->container['sbadminController']->notifications();
+    })->template('sb-admin/sb-admin');
 
-//** Route Like Codeigniter index.php/Controller/Method/Param1/Params2/Param3.../ParamsN
-/*$app->get(':controller', function($controller) {
-	$controller = 'Controller\\'.ucfirst($controller);
-	$c = new $controller($this);
-	return $c->index();
-})->template('basic/basic');
+    //** Typography
+    $app->get('typography', function () {
+        return $this->container['sbadminController']->typography();
+    })->template('sb-admin/sb-admin');
 
-$app->get(':controller/:method', function($controller, $method) {
-	$controller = 'Controller\\'.ucfirst($controller);
-	$c = new $controller($this);
-	return call_user_func_array([$c, $method], []);
-})->template('basic/basic');
+    //** Icons
+    $app->get('icons', function () {
+        return $this->container['sbadminController']->icons();
+    })->template('sb-admin/sb-admin');
 
-$app->get(':controller/:method/:params+', function($controller, $method, $params=[]) {
-	$controller = 'Controller\\'.ucfirst($controller);
-	$c = new $controller($this);
-	return call_user_func_array([$c, $method], $params);
-})->template('basic/basic');
+    //** Icons
+    $app->get('grid', function () {
+        return $this->container['sbadminController']->grid();
+    })->template('sb-admin/sb-admin');
 
-$app->post(':controller/:method/:params+', function($controller, $method, $params=[]) {
-	$controller = 'Controller\\'.ucfirst($controller);
-	$c = new $controller($this);
-	return call_user_func_array([$c, $method], $params);
-});*/
-//-- END Route Like CodeIgniter
+    //** Blank
+    $app->get('blank', function () {
+        return $this->container['sbadminController']->blank();
+    })->template('sb-admin/sb-admin');
+
+    //** Login
+    $app->get('login', function () {
+    })->template('sb-admin/login');
+
+    //** Route Like Codeigniter index.php/Controller/Method/Param1/Params2/Param3.../ParamsN
+    /*$app->get(':controller', function ($controller) {
+        $controller = 'Controller\\' . ucfirst($controller);
+        $c = new $controller($this);
+        return $c->index();
+    })->template('basic/basic');
+
+    $app->get(':controller/:method', function ($controller, $method) {
+        $controller = 'Controller\\' . ucfirst($controller);
+        $c = new $controller($this);
+        return call_user_func_array([$c, $method], []);
+    })->template('basic/basic');
+
+    $app->get(':controller/:method/:params+', function ($controller, $method, $params = []) {
+        $controller = 'Controller\\' . ucfirst($controller);
+        $c = new $controller($this);
+        return call_user_func_array([$c, $method], $params);
+    })->template('basic/basic');
+
+    $app->post(':controller/:method/:params+', function ($controller, $method, $params = []) {
+        $controller = 'Controller\\' . ucfirst($controller);
+        $c = new $controller($this);
+        return call_user_func_array([$c, $method], $params);
+    });*/
+    //-- END Route Like CodeIgniter
+}

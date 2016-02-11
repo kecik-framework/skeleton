@@ -1,65 +1,84 @@
 <?php
-namespace Model;
+/**
+ * Created by PhpStorm.
+ * User: dnaextrim
+ * Date: 2/11/2016
+ * Time: 14:22
+ */
+namespace Models;
 
-use Kecik\Model;
+use \Kecik\Model;
 
-class Simple extends Model {
-    protected static $table='table_name';
-
-    public function __construct($id='') {
+class Simple2 extends Model 
+{
+        protected static $table = 'table_name';
+        
+    /**
+     * Simple2 constructor.
+     */
+    public function __construct($id='') 
+    {
         parent::__construct($id);
     }
-
+    
     /**
-     * Manipulate value of field when we use find function Example: 
-     * 
-     * $rows = \Model\Users::find();
-     * 
+     * Manipulate value of field when use find function
+     * Example:
+     * $rows = \Models\Model::find();
+     *
      * the return value of field now will modified not origin value
+     * @return array
      */
-    public function callback() {
-        // Enable this For Manipulate Some field end Disable for manipulate All field
+    public static function callback()
+    {
         return array(
-            'field' => function($value, $row) {
+            /*'field_name' => function ($value, $row) {
                 return $value;
-            }
+            }*/
         );
-
-        /*
-        // Enable this For Manipulate All field
-        return function($value, $row) {
-            return $value;
-        }
-        */
     }
-
+    
     /**
-     * Manipulate value before for insert and update proccess
+     * Manipulate value before insert and update process
+     * @return array
      */
-    public function before() {
+    public function before()
+    {
         return array(
             'insert' => array(
-                'field' => 'value'
+            
             ),
-
             'update' => array(
-                'field' => 'value'
+            
             )
         );
     }
-
+    
     /**
-     * Call for insert and update proccess
+     * Event after of insert and update process
      */
-    public function after() {
+    public function after()
+    {
         return array(
-            'insert' => function($data) {
-
+            'insert' => function ($data) {
+            
             },
-
-            'update' => function($data) {
-
+            'update' => function ($data) {
+            
             }
         );
     }
+    
+    /**
+     * Relational declaration to another Models 
+     * is same BelongTo of Other Framework
+     * @return array
+     */
+    public static function relational()
+    {
+        return array(
+            // array('Model2', 'field_on_model1', 'field_on_model2')
+        );
+    }
+    
 }

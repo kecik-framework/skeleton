@@ -1,12 +1,23 @@
 <?php
-namespace Team\Module1\Model;
+namespace Team\Module1\Models;
 
 use Kecik\Model;
 
-class Table extends Model {
+/**
+ * Class Table
+ * @package Team\Module1\Model
+ */
+class Table extends Model
+{
     protected static $table = 'table';
 
-    public function __construct($id='') {
+    /**
+     * Table constructor.
+     * @param string $id
+     */
+    public function __construct($id = '')
+    {
         parent::__construct($id);
     }
+
 }

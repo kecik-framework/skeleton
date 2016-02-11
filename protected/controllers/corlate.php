@@ -1,96 +1,106 @@
 <?php
-namespace Controller;
+namespace Controllers;
 
 use Kecik\Controller;
 
-class Corlate extends Controller {
-	var $app;
-
-	public function __construct($app) {
+class Corlate extends Controller 
+{
+	public function __construct() 
+	{
 		parent::__construct();
 
-		$app->config->set('path.assets', 'assets/corlate');
+		$this->config->set('path.assets', 'assets/corlate');
 		//** CSS
-		$app->assets->css->add('bootstrap.min');
-		$app->assets->css->add('font-awesome.min');
-		$app->assets->css->add('animate.min');
-		$app->assets->css->add('prettyPhoto');
-		$app->assets->css->add('main');
-		$app->assets->css->add('responsive');
+		$this->assets->css->add('bootstrap.min');
+		$this->assets->css->add('font-awesome.min');
+		$this->assets->css->add('animate.min');
+		$this->assets->css->add('prettyPhoto');
+		$this->assets->css->add('main');
+		$this->assets->css->add('responsive');
 		//-- END CSS
 
 		//** JS
-		$app->assets->js->add('jquery');
-		$app->assets->js->add('bootstrap.min');
-		$app->assets->js->add('jquery.prettyPhoto');
-		$app->assets->js->add('jquery.isotope.min');
-		$app->assets->js->add('main');
-		$app->assets->js->add('wow.min');
+		$this->assets->js->add('jquery');
+		$this->assets->js->add('bootstrap.min');
+		$this->assets->js->add('jquery.prettyPhoto');
+		$this->assets->js->add('jquery.isotope.min');
+		$this->assets->js->add('main');
+		$this->assets->js->add('wow.min');
 		//-- END JS
-		$this->app = $app;
 	}
 
-	public function index() {
+	public function index() 
+	{
 		$this->config->set('title', 'Home');
 
 		return $this->view('corlate/index');
 	}
 
-	public function about() {
+	public function about() 
+	{
 		$this->config->set('title', 'About');
 
 		return $this->view('corlate/about');
 	}
 
-	public function services() {
+	public function services() 
+	{
 		$this->config->set('title', 'Services');
 
 		return $this->view('corlate/services');
 	}
 
-	public function portfolio() {
+	public function portfolio() 
+	{
 		$this->config->set('title', 'Portfolio');
 
 		return $this->view('corlate/portfolio');
 	}
 
-	public function blog_item() {
+	public function blog_item() 
+	{
 		$this->config->set('title', 'Blog Single');
 
 		return $this->view('corlate/blog-item');
 	}
 
-	public function pricing() {
+	public function pricing() 
+	{
 		$this->config->set('title', 'Pricing');
 
 		return $this->view('corlate/pricing');
 	}
 
-	public function error404() {
+	public function error404() 
+	{
 		$this->config->set('title', '404');
 
 		return $this->view('corlate/404');
 	}
 
-	public function shortcodes() {
+	public function shortcodes() 
+	{
 		$this->config->set('title', 'Shortcodes');
 
 		return $this->view('corlate/shortcodes');
 	}
 
-	public function blog() {
+	public function blog() 
+	{
 		$this->config->set('title', 'Blog');
 
 		return $this->view('corlate/blog');
 	}
 
-	public function contact() {
+	public function contact() 
+	{
 		$this->config->set('title', 'Contact');
 
 		return $this->view('corlate/contact');
 	}
 
-	public function sendmail() {
+	public function sendmail() 
+	{
 		header('Content-type: application/json');
 		$status = array(
 			'type'=>'success',

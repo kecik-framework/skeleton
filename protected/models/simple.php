@@ -1,12 +1,22 @@
 <?php
-namespace Model;
+namespace Models;
 
 use Kecik\Model;
 
-class Simple extends Model {
-	protected static $table='table_name';
+/**
+ * Class Simple
+ * @package Model
+ */
+class Simple extends Model
+{
+    protected static $table = 'table_name';
 
-	public function __construct($id='') {
-		parent::__construct($id);
-	}
+    /**
+     * Simple constructor.
+     * @param string $id
+     */
+    public function __construct($id = '')
+    {
+        parent::__construct($id);
+    }
 }

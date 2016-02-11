@@ -1,5 +1,4 @@
-
-    <div id="page-wrapper">
+<div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">Icons</h1>
@@ -671,7 +670,8 @@
                             <span class="glyphicon glyphicon-folder-close"> glyphicon-folder-close </span><br/>
                             <span class="glyphicon glyphicon-folder-open"> glyphicon-folder-open </span><br/>
                             <span class="glyphicon glyphicon-resize-vertical"> glyphicon-resize-vertical </span><br/>
-                            <span class="glyphicon glyphicon-resize-horizontal"> glyphicon-resize-horizontal </span><br/>
+                            <span
+                                class="glyphicon glyphicon-resize-horizontal"> glyphicon-resize-horizontal </span><br/>
                             <span class="glyphicon glyphicon-hdd"> glyphicon-hdd </span><br/>
                             <span class="glyphicon glyphicon-bullhorn"> glyphicon-bullhorn </span><br/>
                             <span class="glyphicon glyphicon-bell"> glyphicon-bell </span><br/>
@@ -682,10 +682,13 @@
                             <span class="glyphicon glyphicon-hand-left"> glyphicon-hand-left </span><br/>
                             <span class="glyphicon glyphicon-hand-up"> glyphicon-hand-up </span><br/>
                             <span class="glyphicon glyphicon-hand-down"> glyphicon-hand-down </span><br/>
-                            <span class="glyphicon glyphicon-circle-arrow-right"> glyphicon-circle-arrow-right </span><br/>
-                            <span class="glyphicon glyphicon-circle-arrow-left"> glyphicon-circle-arrow-left </span><br/>
+                            <span
+                                class="glyphicon glyphicon-circle-arrow-right"> glyphicon-circle-arrow-right </span><br/>
+                            <span
+                                class="glyphicon glyphicon-circle-arrow-left"> glyphicon-circle-arrow-left </span><br/>
                             <span class="glyphicon glyphicon-circle-arrow-up"> glyphicon-circle-arrow-up </span><br/>
-                            <span class="glyphicon glyphicon-circle-arrow-down"> glyphicon-circle-arrow-down </span><br/>
+                            <span
+                                class="glyphicon glyphicon-circle-arrow-down"> glyphicon-circle-arrow-down </span><br/>
                             <span class="glyphicon glyphicon-globe"> glyphicon-globe </span><br/>
                             <span class="glyphicon glyphicon-wrench"> glyphicon-wrench </span><br/>
                             <span class="glyphicon glyphicon-tasks"> glyphicon-tasks </span><br/>
@@ -702,11 +705,15 @@
                             <span class="glyphicon glyphicon-gbp"> glyphicon-gbp </span><br/>
                             <span class="glyphicon glyphicon-sort"> glyphicon-sort </span><br/>
                             <span class="glyphicon glyphicon-sort-by-alphabet"> glyphicon-sort-by-alphabet </span><br/>
-                            <span class="glyphicon glyphicon-sort-by-alphabet-alt"> glyphicon-sort-by-alphabet-alt </span><br/>
+                            <span
+                                class="glyphicon glyphicon-sort-by-alphabet-alt"> glyphicon-sort-by-alphabet-alt </span><br/>
                             <span class="glyphicon glyphicon-sort-by-order"> glyphicon-sort-by-order </span><br/>
-                            <span class="glyphicon glyphicon-sort-by-order-alt"> glyphicon-sort-by-order-alt </span><br/>
-                            <span class="glyphicon glyphicon-sort-by-attributes"> glyphicon-sort-by-attributes </span><br/>
-                            <span class="glyphicon glyphicon-sort-by-attributes-alt"> glyphicon-sort-by-attributes-alt </span><br/>
+                            <span
+                                class="glyphicon glyphicon-sort-by-order-alt"> glyphicon-sort-by-order-alt </span><br/>
+                            <span
+                                class="glyphicon glyphicon-sort-by-attributes"> glyphicon-sort-by-attributes </span><br/>
+                            <span
+                                class="glyphicon glyphicon-sort-by-attributes-alt"> glyphicon-sort-by-attributes-alt </span><br/>
                             <span class="glyphicon glyphicon-unchecked"> glyphicon-unchecked </span><br/>
                             <span class="glyphicon glyphicon-expand"> glyphicon-expand </span><br/>
                             <span class="glyphicon glyphicon-collapse-down"> glyphicon-collapse-down </span><br/>
@@ -747,7 +754,8 @@
                             <span class="glyphicon glyphicon-sound-6-1"> glyphicon-sound-6-1 </span><br/>
                             <span class="glyphicon glyphicon-sound-7-1"> glyphicon-sound-7-1 </span><br/>
                             <span class="glyphicon glyphicon-copyright-mark"> glyphicon-copyright-mark </span><br/>
-                            <span class="glyphicon glyphicon-registration-mark"> glyphicon-registration-mark </span><br/>
+                            <span
+                                class="glyphicon glyphicon-registration-mark"> glyphicon-registration-mark </span><br/>
                             <span class="glyphicon glyphicon-cloud-download"> glyphicon-cloud-download </span><br/>
                             <span class="glyphicon glyphicon-cloud-upload"> glyphicon-cloud-upload </span><br/>
                             <span class="glyphicon glyphicon-tree-conifer"> glyphicon-tree-conifer </span><br/>
@@ -783,7 +791,8 @@
                             <span class="glyphicon glyphicon-ice-lolly"> glyphicon-ice-lolly </span><br/>
                             <span class="glyphicon glyphicon-ice-lolly-tasted"> glyphicon-ice-lolly-tasted </span><br/>
                             <span class="glyphicon glyphicon-education"> glyphicon-education </span><br/>
-                            <span class="glyphicon glyphicon-option-horizontal"> glyphicon-option-horizontal </span><br/>
+                            <span
+                                class="glyphicon glyphicon-option-horizontal"> glyphicon-option-horizontal </span><br/>
                             <span class="glyphicon glyphicon-option-vertical"> glyphicon-option-vertical </span><br/>
                             <span class="glyphicon glyphicon-menu-hamburger"> glyphicon-menu-hamburger </span><br/>
                             <span class="glyphicon glyphicon-modal-window"> glyphicon-modal-window </span><br/>
@@ -795,10 +804,14 @@
                             <span class="glyphicon glyphicon-text-background"> glyphicon-text-background </span><br/>
                             <span class="glyphicon glyphicon-object-align-top"> glyphicon-object-align-top </span><br/>
                             <span class="glyphicon glyphicon-object-align-bottom"> glyphicon-object-align-bottom </span><br/>
-                            <span class="glyphicon glyphicon-object-align-horizontal"> glyphicon-object-align-horizontal </span><br/>
-                            <span class="glyphicon glyphicon-object-align-left"> glyphicon-object-align-left </span><br/>
-                            <span class="glyphicon glyphicon-object-align-vertical"> glyphicon-object-align-vertical </span><br/>
-                            <span class="glyphicon glyphicon-object-align-right"> glyphicon-object-align-right </span><br/>
+                            <span
+                                class="glyphicon glyphicon-object-align-horizontal"> glyphicon-object-align-horizontal </span><br/>
+                            <span
+                                class="glyphicon glyphicon-object-align-left"> glyphicon-object-align-left </span><br/>
+                            <span
+                                class="glyphicon glyphicon-object-align-vertical"> glyphicon-object-align-vertical </span><br/>
+                            <span
+                                class="glyphicon glyphicon-object-align-right"> glyphicon-object-align-right </span><br/>
                             <span class="glyphicon glyphicon-triangle-right"> glyphicon-triangle-right </span><br/>
                             <span class="glyphicon glyphicon-triangle-left"> glyphicon-triangle-left </span><br/>
                             <span class="glyphicon glyphicon-triangle-bottom"> glyphicon-triangle-bottom </span><br/>
@@ -823,5 +836,5 @@
         <!-- /.col-lg-12 -->
     </div>
     <!-- /.row -->
-    </div>
-    <!-- /#page-wrapper -->
+</div>
+<!-- /#page-wrapper -->

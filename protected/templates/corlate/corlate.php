@@ -1,4 +1,5 @@
-<?php $assets = $this->assets; $url = $this->url; ?>
+<?php $assets = $this->assets;
+$url = $this->url; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>{{= (empty($this->config->get('title')))?'HOME':$this->config->get('title') }} | Corlate</title>
-	
-	<!-- core CSS -->
+
+    <!-- core CSS -->
     <!--
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -21,38 +22,44 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo $assets->images('ico/apple-touch-icon-144-precomposed.png') ?>">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo $assets->images('ico/apple-touch-icon-114-precomposed.png') ?>">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo $assets->images('ico/apple-touch-icon-72-precomposed.png') ?>">
-    <link rel="apple-touch-icon-precomposed" href="<?php echo $assets->images('ico/apple-touch-icon-57-precomposed.png') ?>">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="<?php echo $assets->images('ico/apple-touch-icon-144-precomposed.png') ?>">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="<?php echo $assets->images('ico/apple-touch-icon-114-precomposed.png') ?>">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="<?php echo $assets->images('ico/apple-touch-icon-72-precomposed.png') ?>">
+    <link rel="apple-touch-icon-precomposed"
+          href="<?php echo $assets->images('ico/apple-touch-icon-57-precomposed.png') ?>">
 </head><!--/head-->
 
 <body class="homepage">
 
-    <?php require_once("sections/header.php"); ?>
-    
+
+<?php require_once("sections/header.php"); ?>
 
 
-    @response
-    
+@response
 
-    
-    <?php require_once("sections/bottom.php"); ?>
 
-    <?php require_once("sections/footer.php"); ?>
-    <!--
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/wow.min.js"></script>
-    -->
-    @js
-    <script type="text/javascript">
-        $('.carousel').carousel()
-    </script>
+<?php require_once("sections/bottom.php"); ?>
+
+
+<?php require_once("sections/footer.php"); ?>
+
+
+<!--
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wow.min.js"></script>
+-->
+@js
+<script type="text/javascript">
+    $('.carousel').carousel()
+</script>
 </body>
 </html>
